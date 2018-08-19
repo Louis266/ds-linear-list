@@ -23,6 +23,16 @@ void InitList(LinkedList *);
 
 void DestroyList(LinkedList);
 
+void ClearList(LinkedList);
+
+int ListEmpty(LinkedList);
+
+int ListLength(LinkedList);
+
+ElemType GetElem(LinkedList, int);
+
+int LocateElem(LinkedList, ElemType, int (*compare)(ElemType, ElemType));
+
 void ListDelete(LinkedList, int);
 
 int ListInsert(LinkedList, int, ElemType);
